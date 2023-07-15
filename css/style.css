@@ -6,6 +6,7 @@
     --light-bg: #eff1f7;
     --dark-bg: #232127;
     --error-color: #f46363;
+    --dark-purple: #3a3054;
 }
 
 
@@ -270,10 +271,6 @@ margin-right: auto;
 
 .index-url-shortener-features-wrapper__url-shortener {
     margin-top: -84px;
-    margin-bottom: 120px;
-}
-
-.url-shortener {
 }
 
 .url-shortener__form {
@@ -372,5 +369,106 @@ margin-right: auto;
 }
 
 .url-shortener__copy-button--copied {
-    background-color: #3a3054;
+    background-color: var(--dark-purple);
+}
+
+
+/* INDEX FEATURES */
+.index-features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.index-features__top {
+    max-width: 540px;
+    margin-bottom: 100px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.index-features__title {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    color: var(--text-color-dark);
+}
+
+.index-features__info {
+    margin: 0;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+
+/* FEATURES LIST */
+.index-features__list {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 1;
+}
+
+.index-features__list::before {
+    position: absolute;
+    left: 0;
+    top: 152px;
+    width: 100%;
+    height: 8px;
+    z-index: 0;
+    background-color: var(--accent-color);
+    content: '';
+}
+
+.index-features__item {
+    max-width: 350px;
+}
+
+.index-features__item:nth-child(2) {
+    margin-top: 44px;
+}
+
+.index-features__item:nth-child(3) {
+    margin-top: 88px;
+}
+
+.index-features__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.index-feature {
+    position: relative;
+    padding: 77px 32px 41px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.index-feature__icon--wrapper {
+    display: flex;
+    position: absolute;
+    left: 32px;
+    top: -44px;
+    align-items: center;
+    justify-content: center;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    background-color: var(--dark-purple);
+}
+
+.index-feature__title {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 22px;
+    line-height: normal;
+    color: var(--text-color-dark);
+}
+
+.index-feature__info {
+    margin: 0;
 }

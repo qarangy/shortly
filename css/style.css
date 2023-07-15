@@ -60,7 +60,7 @@ body {
     font-size: 15px;
     line-height: 26px;
     font-family: 'Poppins', 'Arial', sans-serif;
-    background-color: var(--light-bg);
+    background-color: #fff;
     color: var(--text-color);
 }
 
@@ -197,4 +197,35 @@ margin-right: auto;
 
 .site-header__login-link:hover {
     color: var(--text-color-dark);
+}
+
+
+/* HERO */
+.hero {
+    padding-top: 92px;
+    padding-bottom: 222px;
+    background-image: url(/img/working_with_computer.svg);
+    background-repeat: no-repeat;
+    background-position: left calc(50% + 476px) top 30px;
+}
+
+.hero__inner {
+    max-width: 565px;
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: -2px;
+    color: var(--text-color-dark);
+}
+
+.hero__text {
+    margin-top: 0;
+    margin-bottom: 38px;
+    font-size: 22px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
 }

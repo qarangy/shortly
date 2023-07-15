@@ -553,6 +553,7 @@ select:-webkit-autofill:focus {
     line-height: normal;
     letter-spacing: -0.25px;
     text-decoration: none;
+    text-transform: capitalize;
     color: #bfbfbf;
 }
 
